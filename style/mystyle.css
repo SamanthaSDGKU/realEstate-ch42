@@ -1,0 +1,105 @@
+/*global*/
+*{
+    padding: 0;
+    margin: 0;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial;
+}
+
+h1 {
+padding-top: 10px;
+margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    gap: 10px; /* Optional: to give some space between the <a> elements */
+}
+img{
+    max-width: 100%;
+}
+/*utilities*/
+.container{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex-container{
+    display: flex;
+}
+.btn-details{
+    display: block;
+    background-color: orange;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+/*header*/
+
+header.site-init{
+    background-image: url(../img/header.jpg);
+    height: 30vh;
+    background-position: top right;
+    background-size: cover;
+    color: white;
+    position: relative;
+    
+/*we include the flex to aling the h1 with the nav */
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding: 10px;  /* Optional: to give some spacing on the edges */
+}
+
+header.site-init p {
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ margin: 0;/*To ensure that it stays flush to the button*/
+ padding: 10px;/*give space from the edge*/
+ font-size: 20px;
+ font-weight: 700;
+}
+/*more  about us*/
+.more-about-item{
+    margin-right: 1rem;
+    text-align: justify;
+}
+.more-about-item img{
+    max-width:100%;
+    margin:20px 0;
+}
+
+.more-about-item h3{
+    color:black;
+    font-size: 30px;
+    margin:20px 0;
+}
+.more-about-item p{
+    color:black;
+}
+
+/*houses*/
+.houses-item{
+    background-color: lightgray;
+}
+.houses-item-text{
+    padding: 30px;
+}
+.houses-item h3{
+    /* margin: 20px 0; */
+}
+.houses-item p{
+    line-height: 2;
+}
+.houses-item p.price{
+    color:green;
+    font-weight: 700;
+    line-height: 2;
+}
